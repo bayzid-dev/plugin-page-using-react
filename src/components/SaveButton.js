@@ -7,7 +7,7 @@ const SaveButton = ({ onClick }) => {
             variant="primary"
             onClick={onClick}
             __next40pxDefaultSize>
-            {__('Save', 'unadorned-announcement-bar')}
+            {__('Save', 'announcement-bar')}
         </Button>
     )
 }

@@ -8,8 +8,8 @@ function announcement_bar_settings() {
 	// Register the settings for the Unadorned Announcement Bar plugin.
 	$defaults = array(
 		'display'        => true,
-		'message'        => __( 'Hello, WordPress!', 'unadorned-announcement-bar' ),
-		'alignment'      => 'left',
+		'message'        => __( 'Hello, WordPress!', 'announcement-bar' ),
+		'alignment'      => 'center',
 		'size'           => 'x-large',
 		'bg_color'       => '#1a4548',
 		'text_color'     => '#ffffff',

@@ -7,22 +7,22 @@ const SizeControl = ({ value, onChange }) => {
         <FontSizePicker
             fontSizes={[
                 {
-                    name: __('Small', 'unadorned-announcement-bar'),
+                    name: __('Small', 'announcement-bar'),
                     size: 'small',
                     slug: 'small',
                 },
                 {
-                    name: __('Medium', 'unadorned-announcement-bar'),
+                    name: __('Medium', 'announcement-bar'),
                     size: 'medium',
                     slug: 'medium',
                 },
                 {
-                    name: __('Large', 'unadorned-announcement-bar'),
+                    name: __('Large', 'announcement-bar'),
                     size: 'large',
                     slug: 'large',
                 },
                 {
-                    name: __('Extra Large', 'unadorned-announcement-bar'),
+                    name: __('Extra Large', 'announcement-bar'),
                     size: 'x-large',
                     slug: 'x-large',
                 },

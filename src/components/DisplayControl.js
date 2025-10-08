@@ -6,7 +6,7 @@ import { __ } from '@wordpress/i18n';
 const DisplayControl = ({ value, onChange }) => {
     return (
         <ToggleControl
-            label={__('Display', 'unadorned-announcement-bar')}
+            label={__('Display', 'announcement-bar')}
             checked={value}
             onChange={onChange}
             __nextHasNoMarginBottom

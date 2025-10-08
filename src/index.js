@@ -39,8 +39,8 @@ const Notices = () => {
 };
 
 /**
- * Custom hook to manage the settings state for the Unadorned Announcement Bar plugin.
- * This hook encapsulates the logic for handling the announcement message, display state, and size of the announcement bar.
+ * Custom hook to manage the settings state for the Announcement Bar plugin.
+ * This hook encapsulates the logic for handling the announcement message, display state, and size and other properties of the announcement bar.
  * @since 1.0.0
 * @returns {Object} An object containing the current settings and functions to update them.
  */
@@ -48,7 +48,7 @@ const useSettings = () => {
     const [message, setMessage] = useState('Hello, WordPress!');
     const [display, setDisplay] = useState(true);
     const [size, setSize] = useState('x-large');
-    const [alignment, setAlignment] = useState('left');
+    const [alignment, setAlignment] = useState('center');
     const [controlledColors, setControlledColors] = useState('#1a4548');
     const [textColor, setTextColor] = useState('#ffffff');
     const [padding, setPadding] = useState({
@@ -99,7 +99,7 @@ const useSettings = () => {
             },
         }).then(() => {
             // Show a success notice when settings are saved.
-            createSuccessNotice(__('Settings saved successfully!', 'unadorned-announcement-bar'));
+            createSuccessNotice(__('Settings saved successfully!', 'announcement-bar'));
         });
     };
 
@@ -211,7 +211,7 @@ const SettingsPage = () => {
                     </PanelRow>
                 </PanelBody>
                 <PanelBody
-                    title={__('Appearance', 'unadorned-announcement-bar')}
+                    title={__('Appearance', 'announcement-bar')}
                     initialOpen={false}>
                     <PanelRow>
                         <SizeControl
