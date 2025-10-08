@@ -33,8 +33,8 @@ require_once plugin_dir_path( __FILE__ ) . 'src/settings.php';
  */
 function announcement_bar_settings_page() {
 	add_options_page(
-		__( 'Announcement Bar Settings', 'unadorned-announcement-bar' ),
-		__( 'Announcement Bar Settings', 'unadorned-announcement-bar' ),
+		__( 'Announcement Bar', 'unadorned-announcement-bar' ),
+		__( 'Announcement Bar', 'unadorned-announcement-bar' ),
 		'manage_options',
 		'announcement-bar',
 		'bar_settings_page_html'
@@ -120,7 +120,7 @@ function announcement_bar_front_page() {
 		'left'   => 20,
 	);
 
-	$style   = sprintf(
+	$style = sprintf(
 		'%dpx %dpx %dpx %dpx',
 		intval( $padding['top'] ),
 		intval( $padding['right'] ),
